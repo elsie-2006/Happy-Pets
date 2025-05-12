@@ -1,0 +1,58 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Happy Pets |About Us</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                    <h1> Happy Pets</h1><img src="images/happyfeetlogo.png" alt="Company Logo">
+                </div>
+                <div class="menu">
+                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <nav id="nav" class="navigation hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+            <div class="layout">
+            <div class="content-wrapper">
+            <!--Left Sidebar -->
+            <aside class="sidebar left-sidebar">
+                <h3>Ours</h3>
+                <img src="images/ad1.jpg" alt="Ad 1">
+                <p>The cutest and loving bunnies. <a href="services.html">Adopt now</a></p>
+            </aside>
+             <!--Main Content -->
+            <main class="main-content">
+                <h2>About Happy Pets</h2>
+                <p>We have the most exotic and unique pets from across the globe from Spain to Califonia,
+                these cute little house home pets are very unique from their fur to their personalities
+                </p>
+                <p>Happy Pets can offer a lot of adorable pets, we also groam and sell the feeds, supplies
+                    and vaccines. COME TODAY AND ADOPT YOUR FURRY FRIEND
+                </p>
+                <p>Happy pets is a family friendly with unmatched services and HAPPY feet</p>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy;2025 Happy feet.All furry friends</p>
+        </footer>
+    </body>
+</html>
+<script>
+    function toggleMenu() {
+      var nav = document.getElementById("nav");
+      nav.classList.toggle("hidden");
+    }
+  </script>

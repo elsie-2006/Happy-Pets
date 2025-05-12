@@ -1,0 +1,72 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, iinitial-scale=1.0">
+            <title>Happy Pets |About Us</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                    <h1> Happy Pets</h1><img src="images/happyfeetlogo.png" alt="Company Logo">
+                </div>
+                <div class="menu">
+                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <nav id="nav" class="navigation hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Bunnies.html"> Bunnies</a></li>
+                        <li><a href="Hamster.html"> Hamsters</a></li>
+                        <li><a href="Guineapigs.html"> Guinea pigs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+
+           <!--Main Content-->
+           <main class="Bunnies-content">
+            <h2>Our treatments</h2>
+            <p>Here we give your lovely pet the experience of a life time</p>
+            <img src="images/treatment.jpg">  <a href="booknowform.html">
+                <button class="paw-button"><i class="fas fa-paw"></i> Book now</button>
+              </a>
+              <p>Come get your pet washed today and have it smelling fresh in no time</p>
+            <img src="images/treatment2.jpg">  <a href="booknowform.html">
+                <button class="paw-button"><i class="fas fa-paw"></i> Book now</button>
+              </a>
+              <p>Sick and tired of your pet scratching your things, well we got you.</p>
+              <img src="images/treatment5.jpg">  <a href="booknowform.html">
+                <button class="paw-button"><i class="fas fa-paw"></i> Book now</button>
+              </a>
+              <p>It's time to get your pet a new fresh look</p>
+              <img src="images/treatment3.jpg">  <a href="booknowform.html">
+                <button class="paw-button"><i class="fas fa-paw"></i> Book now</button>
+              </a>
+              <p>Parasites are a danger to your pet's well being come and let us take care of it</p>
+              <img src="images/treatment4.jpg">  <a href="booknowform.html">
+                <button class="paw-button"><i class="fas fa-paw"></i> Book now</button>
+              </a>
+              <p>Let us give your pet a 5 star treatment today</p>
+            
+ </main>
+        </section>
+        <button class="paw-button" onclick="history.back()">
+            <i class="fas fa-paw"></i> Return
+          </button>
+
+        <footer>
+            <p>&copy;2025 Happy pets.All your furry friends</p>
+        </footer>
+    </body>
+</html>
+<script>
+    function toggleMenu() {
+      var nav = document.getElementById("nav");
+      nav.classList.toggle("hidden");
+    }
+  </script>

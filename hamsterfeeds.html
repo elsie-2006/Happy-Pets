@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <figure-align= center>
+    <title>Happy Pets | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </figure-align>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1> Happy Pets</h1><img src="images/happyfeetlogo.png" alt="Company Logo">
+        </div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="nav" class="navigation hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section class="Hero">
+        <h2>Do you want delicous for you lovely hamster, you have come to the right place.</h2>
+        <p>     We have feeds for hamsters of your baby hamsters and you won't have to worry about it having mulnutrition.</p>
+        
+    <h3>Our baby feeds</h3>
+    <div class="baby-feeds">
+   <div> <img src="images/baby feed.jpg"> 
+        <button class="paw-button"><i class="fas fa-paw"></i> Buy</button>
+    <p>This is our golden hamster feeds</p>
+    <p>Rich with nutrients and good for baby hamsters.</p>
+    </div>
+    <div>
+    <img src="images/baby feed2.jpg"> 
+        <button class="paw-button"><i class="fas fa-paw"></i> Buy</button>
+
+    <p>This is our golden hamster feeds</p>
+    <p>Rich with nutrients and good for baby hamsters.</p>
+    </div>
+    <div>
+    <img src="images/babyfood3.jpg"> 
+        <button class="paw-button"><i class="fas fa-paw"></i> Buy</button>
+    <p>This is our golden hamster feeds</p>
+    <p>Rich with nutrients and good for baby hamsters.</p>
+    </div>
+    <div>
+     <img src="images/baby feed4.jpg">
+     <button class="paw-button"><i class="fas fa-paw"></i> Buy</button>
+     <p>The best milk for your baby hamster</p>
+     <p>For strong bones and rapid growth</p>
+    </div>
+</div>
+    </div>
+    </section>
+    <button class="paw-button" onclick="history.back()">
+        <i class="fas fa-paw"></i> Return
+      </button>
+    <footer>
+        <p>&copy;2025 Happy Feets. All furry friends</p>
+    </footer>
+</body>
+</html>
+<script>
+    function toggleMenu() {
+      var nav = document.getElementById("nav");
+      nav.classList.toggle("hidden");
+    }
+    document.getElementsByClass('paw-button').addEventListener('click', function () {
+     const loadingImage= document.getElementById("loadingimage").style.display="block"
+  
+      setTimeout (()=> {
+        alert("Purchase completed!");
+         document.getElementsByClass("images/loadingimage.png").style.display="none";
+
+    }, 5000);
+  });
+  </script>

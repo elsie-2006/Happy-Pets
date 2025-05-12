@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adoption Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+<div class="form-container">
+  <h1>Adoption Form</h1><img src="images/happyfeetlogo.png" alt="Company Logo">
+</header>
+<div class="content-wrapper">
+  <form id="adoptionForm">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" class="paw-select" required>
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" required>
+
+    <label for="job">Job:</label>
+    <input type="text" id="job" name="job" required>
+
+    <label for="financialStatus">Financial Status:</label>
+    <select id="financialStatus" name="financialStatus" class="paw-select"required>
+      <option value="">Select Status</option>
+      <option value="Poor">Poor</option>
+      <option value="Level 1">Level 1</option>
+      <option value="Level 2">Level 2</option>
+      <option value="Level 3">Level 3</option>
+      <option value="Rich">Rich</option>
+      </select>
+
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" required>
+
+    <label for="petType">Pet Type:</label>
+    <select id="petType" name="petType" class="paw-select"required>
+    <option value="">Select Status</option>
+    <option value="Bunnies">Bunnies</option>
+    <option value="Guineapigs">Guinea Pigs</option>
+    <option value="Hamsters">Hamster</option>
+    </select>
+
+    <label for="name">Pet Name:</label>
+    <input type="text" id="name" name="name" required>
+    </select>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <button type="submit" class="paw-button">
+      <i class="fas fa-paw"></i> Submit Adoption Form</button>
+    
+      <button class="paw-button" onclick="history.back()">
+        <i class="fas fa-paw"></i> Return
+      </button>
+
+  </form>
+  </div>
+  <img id="loadingImage" src="images/loadingimage.png" alt="Loading..."class="center-loading">
+
+  <script>
+    document.getElementById('adoptionForm').addEventListener('submit', function (event) {
+      event.preventDefault(); 
+  
+      const loadingImage = document.getElementById('loadingImage');
+      loadingImage.style.display = 'block';
+  
+      setTimeout(function () {
+        loadingImage.style.display = 'none';
+        alert("Form submitted successfully!");
+
+        event.target.reset();
+    }, 5000);
+  });
+  </script>
+</div>
+
+
+
+</body>
+</html>

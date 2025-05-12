@@ -1,0 +1,61 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Happy Pets |About Us</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        </head>
+        <body>
+            <header class="navbar">
+                <div class="logo">
+                    <h1> Happy Pets</h1><img src="images/happyfeetlogo.png" alt="Company Logo">
+                </div>
+                <div class="menu">
+                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <nav id="nav" class="navigation hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+            <div class="content-wrapper">
+            <!--Left Sidebar -->
+            <aside class="Sidebar right-sidebar">
+                <h3>Latest Offers</h3>
+                <img src="images/ad3.jpg" alt="Ad 3">
+                <p>Groaming available! Bring your pet today <a href="treatment.html">Book now</a></p>
+            </aside>
+
+            <!--Main Content -->
+            <main class="services-content">
+                <a href="Bunnies.html">
+                    <button class="paw-button"><i class="fas fa-paw"></i> Bunnies</button>
+                  </a>  
+                  <a href="Hamster.html">
+                    <button class="paw-button"><i class="fas fa-paw"></i> Hamsters</button>
+                  </a>  
+                  <a href="Guineapigs.html">
+                    <button class="paw-button"><i class="fas fa-paw"></i> Guinea Pigs</button>
+                  </a>
+                  <p>Click the button of the pet you desire</p>
+            </main>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy;2025 Happy pets.All your furry friends</p>
+        </footer>
+    </body>
+</html>
+<script>
+    function toggleMenu() {
+      var nav = document.getElementById("nav");
+      nav.classList.toggle("hidden");
+    }
+  </script>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+<div class="form-container">
+  <h1>Booking Form</h1><img src="images/happyfeetlogo.png" alt="Company Logo">
+</header>
+  <form id="bookingForm">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" class="paw-select" required>
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" required>
+
+    <label for="financialStatus">Treatment</label>
+    <select id="financialStatus" name="financialStatus" class="paw-select"required>
+      <option value="">Select Status</option>
+      <option value="Wash">Wash</option>
+      <option value="Trimming">Trimming</option>
+      <option value="Nails">Nails</option>
+      <option value="Parasite Removal">Parasite Removal</option>
+      <option value="Massage">Massage</option>
+      </select>
+
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" required>
+
+    <label for="petType">Pet Type:</label>
+    <select id="petType" name="petType" class="paw-select"required>
+    <option value="">Select Status</option>
+    <option value="Bunnies">Bunnies</option>
+    <option value="Guineapigs">Guinea Pigs</option>
+    <option value="Hamsters">Hamster</option>
+    </select>
+
+    <label for="name">Pet Name:</label>
+    <input type="text" id="petname" name="name" required>
+    </select>
+
+    <button type="book" class="paw-button">
+      <i class="fas fa-paw"></i> Book Now</button>
+    
+      <button class="paw-button" onclick="history.back()">
+        <i class="fas fa-paw"></i> Return
+      </button>
+    </div>
+  </form>
+  
+  <img id="bookingImage" src="images/bookedloading.png" alt="Loading..."class="center-loading">
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function (event) {
+      event.preventDefault(); 
+  
+      const loadingImage = document.getElementById('bookingImage');
+      loadingImage.style.display = 'block';
+  
+      setTimeout(function () {
+        loadingImage.style.display = 'none';
+        alert("Session booking  successfully!");
+
+        event.target.reset();
+    }, 5000);
+  });
+  </script>
+
+</body>
+</html>
